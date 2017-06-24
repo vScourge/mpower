@@ -28,7 +28,7 @@ class MPower( ):
 
 		self.cookies = {
 		   # Create 32 character session ID based on IP address. Can be any string.
-			'AIROS_SESSIONID': ( self.ip_address.replace( '.', '' ) * 4 )[ :32 ],
+			'AIROS_SESSIONID': ( self.ip_address * 10 )[ :32 ],
 		}
 
 
